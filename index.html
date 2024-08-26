@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de iPhone 5s</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="screen">
+        <div id="app-container" class="app-container">
+            <!-- Contenedor de aplicaciones -->
+            <div class="app-row">
+                <div class="app" onclick="openApp('https://example.com')">
+                    <img src="icons/clickerjs.png" alt="ClickerJs">
+                    <span>ClickerJs</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.google.com')">
+                    <img src="icons/google.png" alt="Google">
+                    <span>Google</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.youtube.com')">
+                    <img src="icons/youtube.png" alt="YouTube">
+                    <span>YouTube</span>
+                </div>
+                <div class="app" onclick="openApp('https://drive.google.com')">
+                    <img src="icons/drive.png" alt="Google Drive">
+                    <span>Drive</span>
+                </div>
+                <div class="app" onclick="openApp('https://scratch.mit.edu')">
+                    <img src="icons/scratch.png" alt="Scratch">
+                    <span>Scratch</span>
+                </div>
+                <div class="app" onclick="openApp('https://mail.google.com')">
+                    <img src="icons/gmail.png" alt="Gmail">
+                    <span>Gmail</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.facebook.com')">
+                    <img src="icons/facebook.png" alt="Facebook">
+                    <span>Facebook</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.twitter.com')">
+                    <img src="icons/twitter.png" alt="Twitter">
+                    <span>Twitter</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.instagram.com')">
+                    <img src="icons/instagram.png" alt="Instagram">
+                    <span>Instagram</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.netflix.com')">
+                    <img src="icons/netflix.png" alt="Netflix">
+                    <span>Netflix</span>
+                </div>
+                <div class="app" onclick="openApp('https://www.spotify.com')">
+                    <img src="icons/spotify.png" alt="Spotify">
+                    <span>Spotify</span>
+                </div>
+            </div>
+        </div>
+        <div id="iframe-container" class="iframe-container">
+            <iframe id="iframe" src="" frameborder="0"></iframe>
+            <button class="back-button" onclick="goBack()">Volver al Inicio</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

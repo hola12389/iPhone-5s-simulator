@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f0f0f5;
+}
+
+.screen {
+    display: flex;
+    height: 100vh;
+    max-width: 320px;
+    margin: 0 auto;
+    background-color: #000;
+    border-radius: 40px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+.iframe-container {
+    display: none; /* Oculta el contenedor del iframe por defecto */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 2;
+}
+
+.iframe-container iframe {
+    width: 100%;
+    height: calc(100% - 50px); /* Ajustar para el botón de regreso */
+    border: none;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.app-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.app {
+    text-align: center;
+    width: 33%; /* Ajusta el tamaño para tres aplicaciones por fila */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.app img {
+    width: 50px; /* Tamaño de los íconos */
+    height: 50px;
+    border-radius: 20%;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.app span {
+    display: block;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.back-button {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+.app-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.app {
+    text-align: center;
+    width: 33%; /* Ajustado para tener un diseño de 3 columnas */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.app img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    background-color: #fff;
+    padding: 5px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.app span {
+    display: block;
+    color: #fff;
+    margin-top: 5px;
+    font-size: 14px;
+}
